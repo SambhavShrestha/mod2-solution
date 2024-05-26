@@ -1,0 +1,67 @@
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+
+  
+}
+h1{
+  text-align: center;
+}
+div{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  position: relative;
+  gap: 5rem;
+  text-align: center;
+  background-color: gray;
+
+  
+}
+
+span{
+  text-align: center;
+  width: 30%;
+  height: 20%;
+  position: absolute;
+  display: block;
+  border: 1px solid black;
+  top: 0;
+  right: 0;
+
+  
+}
+p{
+  margin-top: 50px;
+}
+
+.bg-pink{
+  background-color: pink;
+}
+.bg-red{
+  background-color: red;
+}
+.bg-yellow{
+  background-color: yellow;
+}
+
+@media screen and (min-width:992px){
+  section{
+   grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and ( (max-width: 991px) and (min-width: 768px)){
+  section{
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+
+@media screen and (max-width: 767px)  {
+  section{
+    grid-template-columns: 1fr;
+ 
+  }
+}
